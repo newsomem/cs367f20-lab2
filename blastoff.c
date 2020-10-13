@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main(void) {
-	int i = 10;
+	const int i = 10;
 
-	while (i > 0) {
-		printf("%d\n", i);
-		i--;		
+	for (int countdown = i; countdown > 0; countdown--) {
+		printf("%d\n", countdown);		
 	}
 	printf("BLASTOFF!\n");
 }
